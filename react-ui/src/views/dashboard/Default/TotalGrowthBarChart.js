@@ -33,7 +33,7 @@ const status = [
 
 //-----------------------|| DASHBOARD DEFAULT - TOTAL GROWTH BAR CHART ||-----------------------//
 
-const TotalGrowthBarChart = ({ isLoading }) => {
+    const TotalGrowthBarChart = ({ isLoading }) => {
     const [value, setValue] = React.useState('today');
     const theme = useTheme();
 
@@ -98,7 +98,7 @@ const TotalGrowthBarChart = ({ isLoading }) => {
                                             <Typography variant="subtitle2">Total Growth</Typography>
                                         </Grid>
                                         <Grid item>
-                                            <Typography variant="h3">$2,324.00</Typography>
+                                            <Typography variant="h3">??0,324.00</Typography>
                                         </Grid>
                                     </Grid>
                                 </Grid>
@@ -130,6 +130,7 @@ const TotalGrowthBarChart = ({ isLoading }) => {
 
 TotalGrowthBarChart.propTypes = {
     isLoading: PropTypes.bool
+
 };
 
 export default TotalGrowthBarChart;

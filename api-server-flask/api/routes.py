@@ -7,7 +7,7 @@ from datetime import datetime, timezone, timedelta
 
 from functools import wraps
 
-from flask import request
+from flask import request, jsonify
 from flask_restx import Api, Resource, fields
 
 import jwt
@@ -82,6 +82,16 @@ def token_required(f):
 """
     Flask-Restx routes
 """
+
+@rest_api.route('/api/value')
+class GetValue(Resource):
+    def get(self):
+        # Aquí puedes definir la lógica para determinar el valor que quieres devolver
+        # Por ahora, vamos a devolver un valor estático como ejemplo
+        value = 152
+        return {"success": True,
+                "value": value,
+                "msg": "The value was successfully send"}, 200
 
 
 @rest_api.route('/api/users/register')

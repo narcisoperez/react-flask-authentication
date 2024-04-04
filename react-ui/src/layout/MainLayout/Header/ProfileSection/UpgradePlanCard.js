@@ -64,7 +64,7 @@ const UpgradePlanCard = () => {
                 <Grid container direction="column" spacing={2}>
                     <Grid item>
                         <Typography variant="h4">
-                            React Flask API Berry
+                            React Flask
                         </Typography>
                     </Grid>
                     <Grid item>
